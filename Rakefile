@@ -15,6 +15,7 @@ task :default do
   Rake::Task[:resource_list].invoke
   Rake::Task[:resource_valiables].invoke
   Rake::Task[:provider_list].invoke
+  Rake::Task[:dsl_list].invoke
 end
 
 desc 'remove all *.dict files'
@@ -37,6 +38,10 @@ end
 
 def correct_provider_consts
   Chef::Provider.constants
+end
+
+def correct_dsl_consts
+  Chef::DSL.constants
 end
 
 desc 'create platform list'
@@ -96,6 +101,15 @@ task :provider_list do
   correct_provider_consts.each do |p|
     File.open("provider_#{p.downcase}.dict", 'w') do |f|
       f.write array_to_words(Chef::Provider.const_get(p).constants(false).map {|s| ['Chef::Provider', p , s ].join('::')})
+    end
+  end
+end
+
+desc 'create dsl method list'
+task :dsl_list do
+  correct_dsl_consts.each do |p|
+    File.open("dsl_#{p.to_s.underscore}.dict", 'w') do |f|
+      f.write array_to_words(Chef::DSL.const_get(p).instance_methods(false))
     end
   end
 end

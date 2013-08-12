@@ -30,12 +30,12 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 - all resouce names
 - resouce options
 - recipe methods
+- DSL methods includes Chef::DSL::*
 
 ### manually created(Todo: create rake task)
 
 ** _add_by_hand.dict **
 
-- nothing
 - immediately
 
 
