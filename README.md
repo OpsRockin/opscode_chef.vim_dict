@@ -19,6 +19,15 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 
 `:set dictionary+=~/.vim/dict/opscode_chef.dict/*.dict`
 
+#### example for .vimrc
+
+Toggle chef dictonary with `:ChefDicAdd` or `:ChefDicRem`.
+
+```
+" load_or remove chef_dict
+command ChefDicAdd set dictionary+=~/.vim/dict/opscode_chef.dict/*.dict
+command ChefDicRem set dictionary-=~/.vim/dict/opscode_chef.dict/*.dict
+```
 
 ## Supports
 
