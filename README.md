@@ -17,6 +17,12 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 
 ## Supports
 
+### From source(rake task)
+
+- platforms
+
+### manually created
+
 - all resouce names
 - resouce common options
 - resouce[file]
