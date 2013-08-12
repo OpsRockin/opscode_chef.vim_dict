@@ -1,0 +1,14 @@
+Chef::Provider::Package::Apt
+Chef::Provider::Package::Dpkg
+Chef::Provider::Package::EasyInstall
+Chef::Provider::Package::Freebsd
+Chef::Provider::Package::Ips
+Chef::Provider::Package::Macports
+Chef::Provider::Package::Pacman
+Chef::Provider::Package::Portage
+Chef::Provider::Package::Rpm
+Chef::Provider::Package::Rubygems
+Chef::Provider::Package::Yum
+Chef::Provider::Package::Zypper
+Chef::Provider::Package::Solaris
+Chef::Provider::Package::SmartOS

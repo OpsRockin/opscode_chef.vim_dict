@@ -1,0 +1,9 @@
+Chef::Provider::Group::Groupadd
+Chef::Provider::Group::Usermod
+Chef::Provider::Group::Aix
+Chef::Provider::Group::Dscl
+Chef::Provider::Group::Gpasswd
+Chef::Provider::Group::Groupmod
+Chef::Provider::Group::Pw
+Chef::Provider::Group::Suse
+Chef::Provider::Group::Windows

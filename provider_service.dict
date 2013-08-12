@@ -1,0 +1,14 @@
+Chef::Provider::Service::Simple
+Chef::Provider::Service::Init
+Chef::Provider::Service::Arch
+Chef::Provider::Service::Debian
+Chef::Provider::Service::Freebsd
+Chef::Provider::Service::Gentoo
+Chef::Provider::Service::Insserv
+Chef::Provider::Service::Invokercd
+Chef::Provider::Service::Redhat
+Chef::Provider::Service::Systemd
+Chef::Provider::Service::Upstart
+Chef::Provider::Service::Windows
+Chef::Provider::Service::Solaris
+Chef::Provider::Service::Macosx

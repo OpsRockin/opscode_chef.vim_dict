@@ -1,0 +1,4 @@
+Chef::Provider::Cron::CRON_PATTERN
+Chef::Provider::Cron::ENV_PATTERN
+Chef::Provider::Cron::CRON_ATTRIBUTES
+Chef::Provider::Cron::Solaris

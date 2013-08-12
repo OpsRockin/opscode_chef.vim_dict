@@ -1,0 +1,2 @@
+Chef::Provider::Deploy::Revision
+Chef::Provider::Deploy::Timestamped

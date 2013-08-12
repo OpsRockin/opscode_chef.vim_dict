@@ -1,0 +1,2 @@
+Chef::Provider::Ifconfig::Redhat
+Chef::Provider::Ifconfig::Debian

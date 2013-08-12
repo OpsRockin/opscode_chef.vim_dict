@@ -1,0 +1,6 @@
+Chef::Provider::RemoteFile::FTP
+Chef::Provider::RemoteFile::CacheControlData
+Chef::Provider::RemoteFile::HTTP
+Chef::Provider::RemoteFile::LocalFile
+Chef::Provider::RemoteFile::Fetcher
+Chef::Provider::RemoteFile::Content

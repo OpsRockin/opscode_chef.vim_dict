@@ -1,0 +1,2 @@
+Chef::Provider::Mount::Mount
+Chef::Provider::Mount::Windows

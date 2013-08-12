@@ -1,0 +1,5 @@
+Chef::Provider::User::Dscl
+Chef::Provider::User::Pw
+Chef::Provider::User::Useradd
+Chef::Provider::User::Windows
+Chef::Provider::User::Solaris

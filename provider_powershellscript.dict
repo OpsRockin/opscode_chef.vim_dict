@@ -1,0 +1,2 @@
+Chef::Provider::PowershellScript::EXIT_STATUS_NORMALIZATION_SCRIPT
+Chef::Provider::PowershellScript::EXIT_STATUS_RESET_SCRIPT

@@ -1,0 +1,1 @@
+Chef::Provider::Subversion::SVN_INFO_PATTERN

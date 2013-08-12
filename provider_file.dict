@@ -1,0 +1,1 @@
+Chef::Provider::File::Content

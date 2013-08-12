@@ -11,6 +11,13 @@ task :default do
   Rake::Task[:methods].invoke
   Rake::Task[:resource_list].invoke
   Rake::Task[:resource_valiables].invoke
+  Rake::Task[:provider_list].invoke
+end
+
+desc 'remove all *.dict files'
+task :clean do
+  system('rm *.dict')
+  system('git checkout _add_by_hand.dict')
 end
 
 def array_to_words(array)
@@ -23,6 +30,10 @@ end
 
 def correct_resource_list
   Dir.glob("chef/lib/chef/resource/*").map{|file| File.basename(file, '.rb')}
+end
+
+def correct_provider_consts
+  Chef::Provider.constants
 end
 
 desc 'create platform list'
@@ -41,7 +52,7 @@ task :methods do
   end
 end
 
-desc 'create resouce ilst'
+desc 'create resouce list'
 task :resource_list do
   File.open('resource_list.dict', 'w') do |f|
     f.write array_to_words(correct_resource_list)
@@ -61,3 +72,11 @@ task :resource_valiables do
   end
 end
 
+desc 'create provider const list'
+task :provider_list do
+  correct_provider_consts.each do |p|
+    File.open("provider_#{p.downcase}.dict", 'w') do |f|
+      f.write array_to_words(Chef::Provider.const_get(p).constants(false).map {|s| ['Chef::Provider', p , s ].join('::')})
+    end
+  end
+end
