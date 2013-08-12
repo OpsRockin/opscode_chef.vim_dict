@@ -1,6 +1,10 @@
 # Vim dict for Opscode Chef
 
 
+## Chef::VERSION
+
+`#=> 11.6.0`
+
 ## Usage
 
 ### Clone to .vim
