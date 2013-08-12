@@ -24,3 +24,9 @@
 @response_file
 @source
 @version
+nothing
+install
+upgrade
+remove
+purge
+reconfig

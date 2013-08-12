@@ -29,3 +29,8 @@
 @use_last_modified
 @ftp_active_mode
 @headers
+nothing
+create
+delete
+touch
+create_if_missing

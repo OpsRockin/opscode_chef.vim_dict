@@ -65,8 +65,10 @@ task :resource_valiables do
   correct_resource_list.each do |r|
     File.open("#{r}_valiables.dict", 'w') do |f|
       begin
-        f.write array_to_words(Chef::Resource.const_get(r.classify).new('dummy').instance_variables)
-      rescue
+        content = Chef::Resource.const_get(r.classify).new(r.downcase)
+        f.write array_to_words(content.instance_variables + content.allowed_actions)
+      rescue => e
+        puts "NOTICE: at #{r} #{e.class} #{e.message}"
       end
     end
   end

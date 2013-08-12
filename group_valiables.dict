@@ -22,3 +22,8 @@
 @gid
 @members
 @append
+nothing
+create
+remove
+modify
+manage

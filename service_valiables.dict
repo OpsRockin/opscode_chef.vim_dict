@@ -31,3 +31,10 @@
 @init_command
 @priority
 @startup_type
+nothing
+enable
+disable
+start
+stop
+restart
+reload

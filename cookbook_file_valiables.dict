@@ -26,3 +26,8 @@
 @diff
 @source
 @cookbook
+nothing
+create
+delete
+touch
+create_if_missing

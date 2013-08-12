@@ -30,3 +30,9 @@
 @username
 @password
 @domain
+nothing
+mount
+umount
+remount
+enable
+disable

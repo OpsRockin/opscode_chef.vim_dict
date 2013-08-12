@@ -21,3 +21,10 @@
 @message
 @url
 @headers
+nothing
+get
+put
+post
+delete
+head
+options

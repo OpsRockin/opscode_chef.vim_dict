@@ -25,3 +25,9 @@
 @source
 @version
 @default_release
+nothing
+install
+upgrade
+remove
+purge
+reconfig

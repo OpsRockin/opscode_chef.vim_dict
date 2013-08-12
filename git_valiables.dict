@@ -25,3 +25,9 @@
 @ssh_wrapper
 @depth
 @additional_remotes
+nothing
+checkout
+export
+sync
+diff
+log

@@ -26,3 +26,10 @@
 @depth
 @svn_arguments
 @svn_info_args
+nothing
+checkout
+export
+sync
+diff
+log
+force_export

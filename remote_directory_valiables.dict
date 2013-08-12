@@ -29,3 +29,9 @@
 @files_mode
 @overwrite
 @cookbook
+nothing
+create
+delete
+create
+create_if_missing
+delete

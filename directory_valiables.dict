@@ -20,3 +20,6 @@
 @resource_name
 @path
 @recursive
+nothing
+create
+delete

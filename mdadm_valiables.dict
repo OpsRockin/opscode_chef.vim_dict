@@ -25,3 +25,7 @@
 @metadata
 @bitmap
 @raid_device
+nothing
+create
+assemble
+stop

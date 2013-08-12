@@ -26,3 +26,9 @@
 @version
 @flush_cache
 @allow_downgrade
+nothing
+install
+upgrade
+remove
+purge
+reconfig

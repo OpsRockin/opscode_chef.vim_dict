@@ -36,3 +36,7 @@
 @svn_force_export
 @additional_remotes
 @keep_releases
+nothing
+force_deploy
+deploy
+rollback

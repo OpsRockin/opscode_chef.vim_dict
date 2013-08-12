@@ -22,3 +22,8 @@
 @recursive
 @key
 @values
+nothing
+create
+create_if_missing
+delete
+delete_key

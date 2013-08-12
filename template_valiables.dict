@@ -31,3 +31,8 @@
 @inline_helper_blocks
 @inline_helper_modules
 @helper_modules
+nothing
+create
+delete
+touch
+create_if_missing

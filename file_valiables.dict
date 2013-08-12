@@ -24,3 +24,8 @@
 @force_unlink
 @manage_symlink_source
 @diff
+nothing
+create
+delete
+touch
+create_if_missing
