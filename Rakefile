@@ -8,6 +8,7 @@ require 'active_support/inflector'
 desc 'create all words'
 task :default do
   Rake::Task[:platform].invoke
+  Rake::Task[:config].invoke
   Rake::Task[:methods].invoke
   Rake::Task[:resource_list].invoke
   Rake::Task[:resource_valiables].invoke
@@ -40,6 +41,13 @@ desc 'create platform list'
 task :platform do
   File.open('platform.dict', 'w') do |f|
     f.write array_to_words(Chef::Platform.platforms.keys)
+  end
+end
+
+desc 'create config options'
+task :config do
+  File.open('confg.dict', 'w') do |f|
+    f.write array_to_words(Chef::Config.keys)
   end
 end
 
@@ -82,3 +90,4 @@ task :provider_list do
     end
   end
 end
+

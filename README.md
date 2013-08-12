@@ -24,6 +24,7 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 ### From source(rake task)
 
 - platforms
+- config options
 - constants of provider
 - all resouce names
 - resouce options
