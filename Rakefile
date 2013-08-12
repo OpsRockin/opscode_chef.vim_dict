@@ -52,7 +52,7 @@ task :methods do
   end
 end
 
-desc 'create resouce list'
+desc 'create resource list'
 task :resource_list do
   File.open('resource_list.dict', 'w') do |f|
     f.write array_to_words(correct_resource_list)
@@ -60,7 +60,7 @@ task :resource_list do
 end
 
 
-desc 'create instance_valiables by resouce '
+desc 'create instance_valiables by resource '
 task :resource_valiables do
   correct_resource_list.each do |r|
     File.open("#{r}_valiables.dict", 'w') do |f|
