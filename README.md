@@ -16,7 +16,7 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 
 ### Use in vim
 
-`:set dictionary=~/.vim/dict/opscode_chef.dict/*.dict`
+`:set dictionary+=~/.vim/dict/opscode_chef.dict/*.dict`
 
 
 ## Supports
