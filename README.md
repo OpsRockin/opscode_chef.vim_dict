@@ -7,7 +7,7 @@
 
 ## Usage
 
-### Clone to .vim
+### Clone to .vim/dict
 
 ```
 $ mkdir -p ~/.vim/dict
@@ -24,17 +24,17 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 ### From source(rake task)
 
 - platforms
-
-### manually created
-
 - all resouce names
-- resouce common options
-- resouce[file]
+- resouce options
+- recipe methods
 
+### manually created(Todo: create rake task)
 
-## TODO:
+** _add_by_hand.dict **
 
-- Create all words by rake task from a source automatically.
+- nothing
+- immediately
+
 
 ## Licence and Author
 
