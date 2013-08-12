@@ -1,3 +1,4 @@
 *.swp
 chef/
+ohai/
 Gemfile.lock

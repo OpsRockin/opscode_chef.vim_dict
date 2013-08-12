@@ -114,3 +114,11 @@ task :dsl_list do
   end
 end
 
+desc 'create ohai default provider_list'
+task :ohai_provider_list do
+  str =  `grep -e "^\s*provides" ohai/lib/ohai/plugins/* -Rh`
+  File.open("ohai_provider.dict", 'w') do |f|
+    f.write array_to_words(str.split.map{|s| s.gsub(/"|'|,/,'').strip}.uniq.sort)
+  end
+end
+

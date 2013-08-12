@@ -1,9 +1,10 @@
 # vim dictionary files for Opscode Chef
 
 
-## Chef::VERSION
+## VERSION
 
-`#=> 11.6.0`
+`Chef #=> 11.6.0`  
+`Ohai #=> 6.18.0`
 
 ## Usage
 
@@ -31,6 +32,7 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 - resouce options
 - recipe methods
 - DSL methods includes Chef::DSL::*
+- Ohai automatic providers
 
 ### manually created(Todo: create rake task)
 
@@ -49,7 +51,7 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 
 
 
-1. clone to opscode chef source to `./chef`
+1. clone to opscode chef source to `./chef` and ohai source to `./ohai`
 2. check out any version you need
 2. bundle
 3. edit `Rakefile` too add a new task
