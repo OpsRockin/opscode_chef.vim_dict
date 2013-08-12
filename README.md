@@ -25,6 +25,7 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 
 - platforms
 - config options
+- knife config options
 - constants of provider
 - all resouce names
 - resouce options

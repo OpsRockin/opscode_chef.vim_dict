@@ -1,0 +1,15 @@
+chef_server
+new_client_name
+admin_client_name
+admin_client_key
+chef_repo
+new_client_key
+validation_client_name
+validation_key
+configure_chef
+run
+ask_user_for_config_path
+ask_user_for_config
+guess_servername
+config_file
+chef_config_path

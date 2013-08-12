@@ -3,12 +3,14 @@
 ## please put chef souce to ./chef
 $:.push(File.expand_path('../chef/lib', __FILE__))
 require 'chef'
+require 'chef/knife/configure'
 require 'active_support/inflector'
 
 desc 'create all words'
 task :default do
   Rake::Task[:platform].invoke
   Rake::Task[:config].invoke
+  Rake::Task[:config_knife].invoke
   Rake::Task[:methods].invoke
   Rake::Task[:resource_list].invoke
   Rake::Task[:resource_valiables].invoke
@@ -46,8 +48,15 @@ end
 
 desc 'create config options'
 task :config do
-  File.open('confg.dict', 'w') do |f|
+  File.open('config.dict', 'w') do |f|
     f.write array_to_words(Chef::Config.keys)
+  end
+end
+
+desc 'create knife config options'
+task :config_knife do
+  File.open('config_knife.dict', 'w') do |f|
+    f.write array_to_words(Chef::Knife::Configure.instance_methods(false))
   end
 end
 
