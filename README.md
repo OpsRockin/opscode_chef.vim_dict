@@ -36,6 +36,24 @@ $ git clone https://github.com/OpsRockin/opscode_chef.vim_dict.git ~/.vim/dict/o
 - immediately
 
 
+## Development
+
+### requirements
+
+-  a source code of the opscode chef
+- ruby with bundler or activesupport
+- rake
+
+
+
+1. clone to opscode chef source to `./chef`
+2. check out any version you need
+2. bundle
+3. edit `Rakefile` too add a new task
+4. rake
+
+
+
 ## Licence and Author
 
 LICENSE: MIT. (see LICENSE.txt)
