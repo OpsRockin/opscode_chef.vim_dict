@@ -1,2 +1,3 @@
 *.swp
 chef/
+Gemfile.lock

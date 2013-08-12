@@ -1,0 +1,15 @@
+cookbook_name
+cookbook_name=
+recipe_name
+recipe_name=
+recipe
+recipe=
+params
+params=
+run_context
+run_context=
+node
+resources
+tag
+tagged?
+untag

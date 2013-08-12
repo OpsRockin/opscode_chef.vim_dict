@@ -10,9 +10,14 @@ task :default do
   Rake::Task[:platform].invoke
   Rake::Task[:methods].invoke
   Rake::Task[:resource_list].invoke
+  Rake::Task[:resource_valiables].invoke
 end
 
 def array_to_words(array)
+  array.map{|x| x.to_s}.join("\n")
+end
+
+def remove_marks_from_words(array)
   array.map{|x| x.to_s}.join("\n")
 end
 
@@ -36,10 +41,23 @@ task :methods do
   end
 end
 
-
 desc 'create resouce ilst'
 task :resource_list do
   File.open('resource_list.dict', 'w') do |f|
     f.write array_to_words(correct_resource_list)
   end
 end
+
+
+desc 'create instance_valiables by resouce '
+task :resource_valiables do
+  correct_resource_list.each do |r|
+    File.open("#{r}_valiables.dict", 'w') do |f|
+      begin
+        f.write array_to_words(Chef::Resource.const_get(r.classify).new('dummy').instance_variables)
+      rescue
+      end
+    end
+  end
+end
+
