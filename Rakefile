@@ -16,6 +16,7 @@ task :default do
   Rake::Task[:resource_valiables].invoke
   Rake::Task[:provider_list].invoke
   Rake::Task[:dsl_list].invoke
+  Rake::Task[:ohai_provider_list].invoke
 end
 
 desc 'remove all *.dict files'
