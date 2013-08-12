@@ -1,4 +1,4 @@
-# Vim dict for Opscode Chef
+# vim dictionary files for Opscode Chef
 
 
 ## Chef::VERSION
