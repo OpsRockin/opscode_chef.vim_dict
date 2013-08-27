@@ -86,12 +86,32 @@ end
 desc 'create instance_valiables by resource '
 task :resource_valiables do
   correct_resource_list.each do |r|
-    File.open("#{r}_valiables.dict", 'w') do |f|
-      begin
-        content = Chef::Resource.const_get(r.classify).new(r.downcase)
-        f.write array_to_words(content.instance_variables + content.allowed_actions)
-      rescue => e
-        puts "NOTICE: at #{r} #{e.class} #{e.message}"
+    if r == 'lwrp_base'
+      File.open("#{r}_methods.dict", 'w') do |f|
+        begin
+          content = Chef::Resource::LWRPBase.methods(false)
+          f.write array_to_words(content)
+        rescue => e
+          puts "NOTICE: at #{r} #{e.class} #{e.message}"
+        end
+      end
+    elsif r == 'conditional'
+      File.open("#{r}_methods.dict", 'w') do |f|
+        begin
+          content = Chef::Resource::Conditional.instance_methods(false)
+          f.write array_to_words(content)
+        rescue => e
+          puts "NOTICE: at #{r} #{e.class} #{e.message}"
+        end
+      end
+    else
+      File.open("#{r}_valiables.dict", 'w') do |f|
+        begin
+          content = Chef::Resource.const_get(r.classify).new(r.downcase)
+          f.write array_to_words(content.instance_variables + content.allowed_actions)
+        rescue => e
+          puts "NOTICE: at #{r} #{e.class} #{e.message}"
+        end
       end
     end
   end
