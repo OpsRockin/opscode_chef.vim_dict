@@ -30,7 +30,6 @@
 @reload_command
 @init_command
 @priority
-@startup_type
 nothing
 enable
 disable

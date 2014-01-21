@@ -1,2 +1,3 @@
 Chef::Provider::Ifconfig::Redhat
 Chef::Provider::Ifconfig::Debian
+Chef::Provider::Ifconfig::Aix

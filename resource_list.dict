@@ -1,6 +1,7 @@
 apt_package
 bash
 batch
+bff_package
 breakpoint
 chef_gem
 conditional
@@ -53,5 +54,6 @@ subversion
 template
 timestamped_deploy
 user
+whyrun_safe_ruby_block
 windows_script
 yum_package

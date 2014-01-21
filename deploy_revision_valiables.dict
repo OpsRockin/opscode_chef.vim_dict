@@ -36,6 +36,8 @@
 @svn_force_export
 @additional_remotes
 @keep_releases
+@enable_checkout
+@checkout_branch
 nothing
 force_deploy
 deploy

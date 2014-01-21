@@ -20,10 +20,12 @@
 @destination
 @resource_name
 @enable_submodules
+@enable_checkout
 @revision
 @remote
 @ssh_wrapper
 @depth
+@checkout_branch
 @additional_remotes
 nothing
 checkout

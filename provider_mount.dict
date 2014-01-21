@@ -1,2 +1,3 @@
 Chef::Provider::Mount::Mount
+Chef::Provider::Mount::Aix
 Chef::Provider::Mount::Windows

@@ -54,9 +54,19 @@ end
 
 desc 'create config options'
 task :config do
-  File.open('config.dict', 'w') do |f|
-    f.write array_to_words(Chef::Config.keys)
-  end
+#  File.open('config.dict', 'w') do |f|
+#    f.write ''
+#  end
+#
+#  module Mixlib::Config
+#    def default(*arg)
+#      File.open('config.dict', 'w') do |f|
+#        f.write array_to_words(arg[0])
+#      end
+#    end
+#  end
+#
+#  load File.expand_path('../chef/lib/chef/config.rb', __FILE__)
 end
 
 desc 'create knife config options'

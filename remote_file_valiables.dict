@@ -24,6 +24,7 @@
 @force_unlink
 @manage_symlink_source
 @diff
+@sensitive
 @source
 @use_etag
 @use_last_modified

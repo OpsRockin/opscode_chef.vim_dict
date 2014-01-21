@@ -21,7 +21,9 @@
 @group_name
 @gid
 @members
+@excluded_members
 @append
+@non_unique
 nothing
 create
 remove

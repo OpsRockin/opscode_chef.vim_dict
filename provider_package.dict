@@ -12,3 +12,4 @@ Chef::Provider::Package::Yum
 Chef::Provider::Package::Zypper
 Chef::Provider::Package::Solaris
 Chef::Provider::Package::SmartOS
+Chef::Provider::Package::Aix

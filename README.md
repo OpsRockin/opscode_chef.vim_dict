@@ -3,8 +3,8 @@
 
 ## VERSION
 
-`Chef #=> 11.6.0`  
-`Ohai #=> 6.18.0`
+`Chef #=> 11.8.2`  
+`Ohai #=> 6.20.0`
 
 ## Usage
 
